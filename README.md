@@ -34,13 +34,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive means that the site layout is going to change in certain pre determined sizes or specific points. 
+Fully Responsive means that the layout will always change according to the size of the screen that the user is seeing the website in. It will respond to every size change, not just specific fixed points. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means that you build the website having in mind first the mobile users. Thus you start deisgning for the minmium width and then expand your media queries for higher sizes. You use min-width media querie for this.
+Desktop first is the other way around, you design having the desktop design in mind first and then adjust for smaller sizes with max-width.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Font size 62.5% will make the font size for our website be around 10px, because the default fontsize for the web tends to be 16px, so 62.5% of that is 10px. Then starting from those 10px we can work them anyway we want in more specific styling by using rem units, which are a mutiplier of the initial value of 62.5%(10pxish). So now if you use 2rem it will be 20px for example. Using rem is very useful because it applies over the initial fixed value that was given (62.5%) and doesnt change the initial value for the cascading styles like em does, which makes it too hard to calculate exactly. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Pre-Processing is using a program to add more eficiency to your css coding. You can do different things like nesting, mixins, variables that the preprocessor will turn into css code allowing you to save time and space. To give you an example, with nesting you can change all the css styles of html children without leaving the parent class, so you can just code inside the parent class and keep adding changes to children without having to call every children and grandchildren class independently and so on. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I personally loved mixins the most. I think they are very useful and time saver. Parametric Mixins too. 
+Havent really tried functions yet, but I guess that could be hard.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

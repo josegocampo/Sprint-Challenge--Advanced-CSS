@@ -7,11 +7,11 @@
     justify-content: space-around;
 }
 
-.buttonmix(@bheight,@bwidth,@bback,@bcolor,@bborder,@fonts,@fweight,@txtal,@dis,@just,@al){
+.buttonmix(@txtdeco,@bheight,@bwidth,@bback,@bborder,@fonts,@fweight,@txtal,@dis,@just,@al,@bcolor){
+  text-decoration: @txtdeco;
   height: @bheight;
   width: @bwidth;
   background: @bback;
-  color: @bcolor;
   border-radius: @bborder;
   font-size: @fonts;
   font-weight: @fweight;
@@ -19,6 +19,6 @@
   display: @dis;
   justify-content: @just;
   align-items: @al;
-
+  color: @bcolor;
 }
 

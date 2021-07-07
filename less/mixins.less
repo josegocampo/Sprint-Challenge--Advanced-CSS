@@ -1,1 +1,24 @@
 // Mixins Here
+.navbox() {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttonmix(@txtdeco,@bheight,@bwidth,@bback,@bborder,@fonts,@fweight,@txtal,@dis,@just,@al,@bcolor){
+  text-decoration: @txtdeco;
+  height: @bheight;
+  width: @bwidth;
+  background: @bback;
+  border-radius: @bborder;
+  font-size: @fonts;
+  font-weight: @fweight;
+  text-align: @txtal;
+  display: @dis;
+  justify-content: @just;
+  align-items: @al;
+  color: @bcolor;
+}
+

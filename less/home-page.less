@@ -25,6 +25,21 @@
       border-radius: 20px;
       height: 100%;
     }
+    @media @phone {
+      width: 100%;
+      
+      .sky, .launch {
+        display: none;
+      }
+
+      .blast {
+        width: 95%;
+      }
+
+      
+
+  }
+
   }
 
   .visit-planets {
@@ -58,7 +73,16 @@
       }
 
       .btn {
+        .buttonmix(none,50px,130px,black,5px,2.3rem,600,center,flex,center,center,white);
+    
+    
+      &:hover {
+        background: white;
+        color: rgba(12, 12, 12, 0.918);
       }
+      }
+
+
     }
 
     .walk-img {
@@ -71,5 +95,96 @@
         border-radius: 10px;
       }
     }
+
+
+    @media @phone {
+      width: 100%;
+      flex-direction: column-reverse;
+      padding: 0;
+      align-items: center;
+      margin-top: 20px;
+
+      .walk-text {
+        width: 90%;
+        margin-top: 20px;
+
+        .btn {
+          width: 100%;
+          height: 85px;
+          font-size: 2.3rem;
+          margin-bottom: 25px;
+        }
+      }
+
+      .walk-img{
+        width:90%;
+        margin-top: 20px;
+      }
+      
+      
+  }
+
+
   }
 }// home
+
+.allform {
+  background: lightgrey;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.mrof {
+  width: 450px;
+  height: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  color: black;
+  font-weight: 550;
+
+}
+
+.random {
+  margin-bottom: 35px;
+}
+
+input[type=text] {
+  width: 280px;
+  text-align: center;
+ margin-bottom: 30px;
+ background: rgb(148, 158, 255);
+}
+
+input[type=email] {
+  width: 280px;
+  text-align: center;
+  margin-bottom: 30px;
+  background: rgb(148, 158, 255);
+}
+
+select[name=role] {
+  width: 280px;
+  height: 290;
+  text-align: center;
+  margin-bottom: 30px;
+  background: rgb(148, 158, 255);
+}
+
+textarea[name=message] {
+  width: 280px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 30px;
+  background: rgb(148, 158, 255);
+}
+
+button[type=submit] {
+  margin-left: 10px;
+}
+
+h4 {
+  font-size: 1.8rem;
+  
+}
